@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TabsPage } from './tabs.page';
+import { TabsPage } from "./TabsPage";
 
 const routes: Routes = [
   {
@@ -38,15 +38,25 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'tabprofil',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../tabprofil/tabprofil.module').then(m => m.TabprofilPageModule)
+          }
+        ]
+      },
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/login',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/login',
     pathMatch: 'full'
   }
 ];

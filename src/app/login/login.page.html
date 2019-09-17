@@ -1,9 +1,9 @@
 
 <ion-content>
   <ion-img src="./assets/images/logo.jpg" class="transp"></ion-img>
-  <div padding>
+  <div class="ion-padding">
   </div> 
-  <form #form="ngForm" (ngSubmit)="login(form)">
+  <form #form="ngForm" (ngSubmit)="doLogin(form)">
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
@@ -17,7 +17,7 @@
             </ion-item>
           </div>
           <div padding>
-            <ion-button size="large" type="submit" [disabled]="form.invalid" expand="block">Login</ion-button>
+            <ion-button size="large" type="submit"  expand="block">Login</ion-button>
           
           </div>
         </ion-col>

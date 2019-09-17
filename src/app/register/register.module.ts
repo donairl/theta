@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { RegisterPage } from './register.page';
+import { TabsPageRoutingModule } from '../tabs/tabs.router.module';
+import { TabsPage } from "../tabs/TabsPage";
 
 const routes: Routes = [
   {
