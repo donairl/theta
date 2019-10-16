@@ -8,7 +8,8 @@ const routes: Routes = [
   },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-  { path: 'tabprofil', loadChildren: './tabprofil/tabprofil.module#TabprofilPageModule' }
+  { path: 'tabprofil', loadChildren: './tabprofil/tabprofil.module#TabprofilPageModule' },
+  { path: 'booking', loadChildren: './booking/booking.module#BookingPageModule' }
 ];
 @NgModule({
   imports: [

@@ -14,7 +14,7 @@ export class LoginPage implements OnInit {
   }
 
   doLogin(){
-   
+
       console.log('login button pressed');
       this.router.navigateByUrl('/tabs/tab1');
      
