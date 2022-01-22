@@ -12,6 +12,7 @@ export class Tab2Page {
 
    OrderClick(){
     this.router.navigateByUrl('/booking');
+
   }
 
 }
